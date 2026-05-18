@@ -9,4 +9,19 @@ public:
     //private member
     void setXY(string a, string b){
         x = a;
-        
+        y = b;
+    }
+    //menampilkan nilai
+    void display() {
+        cout << "x = " << x << endl;
+        cout << "u = " << y << endl;
+    }
+};
+
+int main(){
+    AbstraksiKlas ak;
+    ak.setXY("Yogyakarta", "Kampus");
+    ak.display();
+
+    return 0;
+}
